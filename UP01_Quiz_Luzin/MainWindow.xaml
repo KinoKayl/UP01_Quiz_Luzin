@@ -1,0 +1,15 @@
+﻿<Window x:Class="UP01_Quiz_Luzin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UP01_Quiz_Luzin"
+        mc:Ignorable="d"
+            Title="Приложение" Width="1280" Height="800" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Frame x:Name="MainFrame" Content="" Margin="0,56,0,54" Style="{StaticResource BackgroundFrame}" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="goBackButton" Content="Назад" HorizontalAlignment="Left" Margin="14,14,0,0" Style="{StaticResource ButtonsForMenu}" Click="goBackButton_Click" VerticalAlignment="Top" Width="96" Height="32"/>
+        <TextBlock x:Name="CurrentTimeAndDate"  HorizontalAlignment="Left" Margin="1073,735,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
