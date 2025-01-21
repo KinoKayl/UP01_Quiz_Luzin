@@ -21,6 +21,8 @@ namespace UP01_Quiz_Luzin.Pages
     /// </summary>
     public partial class QuizPage : Page
     {
+        public int Count;
+
         public QuizPage()
         {
             InitializeComponent();
