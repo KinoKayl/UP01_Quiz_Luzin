@@ -33,7 +33,7 @@
           <Property Name="Result_StudentNumber" Type="int" Nullable="false" />
           <Property Name="Result_Question" Type="int" Nullable="false" />
           <Property Name="Result_QuestionCount" Type="int" Nullable="false" />
-          <Property Name="Result_QuestionTime" Type="int" Nullable="false" />
+          <Property Name="Result_QuestionTime" Type="varchar" MaxLength="100" />
           <Property Name="Result_QuestionCorrectCount" Type="int" Nullable="false" />
           <Property Name="Result_Result" Type="int" Nullable="false" />
         </EntityType>
@@ -175,7 +175,7 @@
           <Property Name="Result_StudentNumber" Type="Int32" Nullable="false" />
           <Property Name="Result_Question" Type="Int32" Nullable="false" />
           <Property Name="Result_QuestionCount" Type="Int32" Nullable="false" />
-          <Property Name="Result_QuestionTime" Type="Int32" Nullable="false" />
+          <Property Name="Result_QuestionTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Result_QuestionCorrectCount" Type="Int32" Nullable="false" />
           <Property Name="Result_Result" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Questios" Relationship="Self.FK_Results_Questios" FromRole="Results" ToRole="Questios" />

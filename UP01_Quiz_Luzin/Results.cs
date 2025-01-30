@@ -18,7 +18,7 @@ namespace UP01_Quiz_Luzin
         public int Result_StudentNumber { get; set; }
         public int Result_Question { get; set; }
         public int Result_QuestionCount { get; set; }
-        public int Result_QuestionTime { get; set; }
+        public string Result_QuestionTime { get; set; }
         public int Result_QuestionCorrectCount { get; set; }
         public int Result_Result { get; set; }
     

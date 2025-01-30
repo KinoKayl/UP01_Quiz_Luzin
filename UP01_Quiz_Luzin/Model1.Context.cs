@@ -26,7 +26,7 @@ namespace UP01_Quiz_Luzin
         {
             if (_context == null)
             {
-                _context = new Entities(); 
+                _context = new Entities(); // Замените YourDbContext на ваш контекст базы данных
             }
             return _context;
         }

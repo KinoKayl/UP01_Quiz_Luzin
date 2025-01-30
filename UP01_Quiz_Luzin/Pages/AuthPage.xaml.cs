@@ -65,6 +65,9 @@ namespace UP01_Quiz_Luzin.Pages
         private void AuthButton_Click(object sender, RoutedEventArgs e)
         {
             string login = LoginBox.Text;
+
+            App.Current.Resources["Login"] = login;
+
             string hashedPassword = GetHash(PassswordBox.Password);
 
             if (LoginBox.Text.Length < 5)

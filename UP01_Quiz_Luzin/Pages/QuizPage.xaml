@@ -12,12 +12,16 @@
         <Canvas x:Name="MainCanvas" ClipToBounds="True">
             <!-- Первая StackPanel -->
             <StackPanel x:Name="FirstPanel" Orientation="Vertical" Width="300" Height="300" Background="LightGray">
-                
+
                 <TextBlock Text="Вопрос 1 из 4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="Что такое IDE" FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <RadioButton x:Name="FirstRadioButton1" Margin="40,10,0,0" Content="Вариант" HorizontalAlignment="Left"/>
-                <RadioButton x:Name="SecondRadioButton1" Margin="40,10,0,0" Content="Вариант" HorizontalAlignment="Left"/>
-                <RadioButton x:Name="ThirdRadioButton1" Margin="40,10,0,0" Content="Вариант" HorizontalAlignment="Left"/>
+                <TextBlock Text="Что такое IDE" FontSize="20" Margin="0,20,0,20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Vertical" Width="223">
+                    <RadioButton IsChecked="False" x:Name="FirstRadioButton1" Content="Жанр компьютерных игр" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="SecondRadioButton1" Content="Программное обеспечение" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="ThirdRadioButton1" Content="Система управления версиями" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="FourthRadioButton1" Content="Интегрированная среда разработки" Margin="0,0,0,10"/>
+
+                </StackPanel>
             </StackPanel>
 
             <!-- Вторая StackPanel -->
@@ -28,31 +32,76 @@
                     </Style>
                 </StackPanel.Resources>
                 <TextBlock Text="Вопрос 2 из 4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="Представьтесь" FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="ФИО:" FontSize="16" Margin="-150,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <RadioButton x:Name="FirstRadioButton2" Content="Вариант" HorizontalAlignment="Center"/>
-                <RadioButton x:Name="SecondRadioButton2" Content="Вариант" HorizontalAlignment="Center"/>
-                <RadioButton x:Name="ThirdRadioButton2" Content="Вариант" HorizontalAlignment="Center"/>
+                <TextBlock Text="Оператор вывода" FontSize="20" Margin="0,20,0,20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Vertical" Width="186">
+                    <RadioButton IsChecked="False" x:Name="FirstRadioButton2" Content="WriteLn" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="SecondRadioButton2" Content="if" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="ThirdRadioButton2" Content="for" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="FourthRadioButton2" Content="While" Margin="0,0,0,10"/>
 
-                <TextBlock Text="Номер группы:" FontSize="16" Margin="-80,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
             </StackPanel>
 
             <!-- Третья StackPanel -->
-            <StackPanel x:Name="ThirdPanel" Orientation="Vertical" Width="300" Height="300" Background="LightGreen" Visibility="Collapsed">
-                <TextBlock Text="Панель 2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel x:Name="ThirdPanel" Orientation="Vertical" Width="300" Height="300" Background="White" Visibility="Collapsed">
+                <StackPanel.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="Вопрос 3 из 4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Операторы И/ИЛИ" FontSize="20" Margin="0,20,0,20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Vertical" Width="186">
+                    <RadioButton IsChecked="False" x:Name="FirstRadioButton3" Content="!   *" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="SecondRadioButton3" Content="&amp;&amp;  ||" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="ThirdRadioButton3" Content="n:  m:" Margin="0,0,0,10"/>
+                    <RadioButton IsChecked="False" x:Name="FourthRadioButton3" Content="/  \" Margin="0,0,0,10"/>
+
+                </StackPanel>
             </StackPanel>
 
             <!-- Четвертая StackPanel -->
-            <StackPanel x:Name="FourthPanel" Orientation="Vertical" Width="300" Height="300" Background="LightGreen" Visibility="Collapsed">
-                <TextBlock Text="Панель 2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel x:Name="FourthPanel" Orientation="Vertical" Width="300" Height="300" Background="White" Visibility="Collapsed">
+                <StackPanel.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="Вопрос 4 из 4" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Президент РФ" FontSize="20" Margin="0,20,0,20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Vertical" Width="198">
+                    <RadioButton x:Name="FirstRadioButton4" IsChecked="False" Content="Палилов Сергей Федорович" Margin="0,0,0,10"/>
+                    <RadioButton x:Name="SecondRadioButton4" IsChecked="False" Content="Патраков Данила Дмитриевич" Margin="0,0,0,10"/>
+                    <RadioButton x:Name="ThirdRadioButton4" IsChecked="False" Content="Путин Владимир Владимирович" Margin="0,0,0,10"/>
+
+                </StackPanel>
             </StackPanel>
 
-            <Button x:Name="AniButton" Content="Дальше" Canvas.Left="359" Canvas.Top="355" Style="{StaticResource ButtonsForMenu}" Click="AniButton_Click" Height="37" Width="82">
+            <StackPanel x:Name="ResultPanel" Orientation="Vertical" Width="300" Height="300" Background="LightGray" Visibility="Collapsed">
+
+                <TextBlock Text="Результат" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Кол-во правильных ответов:" FontSize="20" Margin="0,20,0,20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:Name="ResultTextBox" Text="" FontSize="70" Width="46" HorizontalAlignment="Center"/>
+
+            </StackPanel>
+
+            <Button x:Name="AniButton" Content="Дальше" Canvas.Left="600" Canvas.Top="400" Style="{StaticResource ButtonsForMenu}" Click="AniButton_Click" Height="37" Width="82">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
+            </Button>
+            <TextBlock x:Name="TimerTextBlock" Text="00:00:00" FontSize="20" Canvas.Left="717" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="StartButton" Content="Старт" Canvas.Left="600" Canvas.Top="400" Click="StartButton_Click" Height="37" Width="82" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Style>
+                    <StaticResource ResourceKey="ButtonsForMenu"/>
+                </Button.Style>
             </Button>
         </Canvas>
     </Grid>
